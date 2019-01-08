@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using AppFontend.BUS;
 
 namespace AppFontend
 {
@@ -23,6 +24,7 @@ namespace AppFontend
     {
         public MainWindow()
         {
+            CourseBUS.Courses_Name();
             //// Test Composite design pattern
             //Manager mn1 = new Manager("mn1111", "02121212", "Long An", "mn1@gmail.com");
             //Manager mn2 = new Manager("mn2222", "03232323", "Ho Chi Minh", "mn2@gmail.com");
