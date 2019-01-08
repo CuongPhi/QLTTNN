@@ -14,8 +14,8 @@ namespace AppFontend.Models
         protected DateTime timeEnd;
 
         // Danh sách giáo viên của khóa học
-        public List<Teacher> listTeacher = new List<Teacher>();
+        public Dictionary<int, Teacher> listTeacher = new Dictionary<int, Teacher>();
         // List sinh viên của khóa học
-        public List<Student> listStudent = new List<Student>();
+        public Dictionary<int, Student> listStudent = new Dictionary<int, Student>();
     }
 }
