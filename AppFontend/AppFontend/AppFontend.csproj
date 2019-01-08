@@ -68,6 +68,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\Manager.cs" />
+    <Compile Include="Models\Student.cs" />
+    <Compile Include="Models\Teacher.cs" />
+    <Compile Include="Models\Course.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
