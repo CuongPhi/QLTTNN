@@ -27,9 +27,9 @@ namespace AppFontend.Models
             this.email = email;
         }
 
-        public abstract bool Add(Employee c);
+        public abstract bool Add(int id, Employee c);
  
-        public abstract bool Remove(Employee c);
+        public abstract bool Remove(int id);
 
         public abstract void Display(int depth);
     }

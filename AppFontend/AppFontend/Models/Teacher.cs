@@ -29,12 +29,12 @@ namespace AppFontend.Models
             listCourse.Remove(c);
         }
 
-        public override bool Add(Employee e)
+        public override bool Add(int id, Employee c)
         {
             return false;
         }
 
-        public override bool Remove(Employee e)
+        public override bool Remove(int id)
         {
             return false;
         }
