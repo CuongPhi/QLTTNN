@@ -12,21 +12,21 @@ namespace AppFontend.Models
     /// </summary>
     class Manager : Employee
     {
-        public List<Employee> listTeacher = new List<Employee>();
+        public Dictionary<int, Employee> listTeacher = new Dictionary<int, Employee>();
 
         // constructor
         public Manager(int id, string name, string phonenumber, string address, string email)
             : base(id, name, phonenumber, address, email) { }
 
-        public override bool Add(Employee c)
+        public override bool Add(int id, Employee c)
         {
-            this.listTeacher.Add(c);
+            this.listTeacher.Add(id, c);
             return true;
         }
 
-        public override bool Remove(Employee c)
+        public override bool Remove(int id)
         {
-            this.listTeacher.Remove(c);
+            this.listTeacher.Remove(id);
             return false;
         }
 
@@ -37,9 +37,9 @@ namespace AppFontend.Models
         }
 
         // Thêm giáo viên vào Khóa học
-        public void addTeacherIntoCourse(Teacher tc, Course c)
+        public void addTeacherIntoCourse(int idTeacher, Teacher tc,int idCourse, Course c)
         {
-            c.listTeacher.Add(tc);
+            c.listTeacher.Add(idTeacher, tc);
             // Add new teacher into Course API
         }
 
@@ -47,10 +47,10 @@ namespace AppFontend.Models
         public override void Display(int depth)
         {
             Trace.WriteLine(this.name);
-            foreach(Employee e in listTeacher)
-            {
-                e.Display(depth + 2);
-            }
+            //foreach(Employee e in listTeacher)
+            //{
+            //    e.Display(depth + 2);
+            //}
         }
     }
 }
