@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2020
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppFontend", "AppFontend\AppFontend.csproj", "{C71F6F20-4313-4F14-89A4-2E828C515EC2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C71F6F20-4313-4F14-89A4-2E828C515EC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C71F6F20-4313-4F14-89A4-2E828C515EC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C71F6F20-4313-4F14-89A4-2E828C515EC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C71F6F20-4313-4F14-89A4-2E828C515EC2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D42D3C82-FA1F-40B6-A832-4A40F08E0711}
+	EndGlobalSection
+EndGlobal
