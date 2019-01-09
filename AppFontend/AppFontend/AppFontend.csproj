@@ -60,6 +60,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Views\ManagerMenu.xaml.cs">
+      <DependentUpon>ManagerMenu.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\StudentMenu.xaml.cs">
       <DependentUpon>StudentMenu.xaml</DependentUpon>
     </Compile>
@@ -75,8 +78,17 @@
     <Compile Include="Views\UC_Views\DanhSachMonDangKy.xaml.cs">
       <DependentUpon>DanhSachMonDangKy.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\UC_Views\QuanLyGiaoVien.xaml.cs">
+      <DependentUpon>QuanLyGiaoVien.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UC_Views\QuanLyKhoaHoc.xaml.cs">
+      <DependentUpon>QuanLyKhoaHoc.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\UC_Views\VietThongBao.xaml.cs">
       <DependentUpon>VietThongBao.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UC_Views\XemDanhSachDangKy.xaml.cs">
+      <DependentUpon>XemDanhSachDangKy.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\UC_Views\XemThongBao.xaml.cs">
       <DependentUpon>XemThongBao.xaml</DependentUpon>
@@ -93,6 +105,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Views\ManagerMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\StudentMenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -113,7 +129,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\UC_Views\QuanLyGiaoVien.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UC_Views\QuanLyKhoaHoc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\UC_Views\VietThongBao.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UC_Views\XemDanhSachDangKy.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
