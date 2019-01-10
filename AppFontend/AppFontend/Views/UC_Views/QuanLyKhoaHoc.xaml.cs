@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AppFontend.BUS;
+using AppFontend.DTO;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +25,13 @@ namespace AppFontend.Views.UC_Views
         public QuanLyKhoaHoc()
         {
             InitializeComponent();
+        }
+
+        private async void Grid_Loaded(object sender, RoutedEventArgs e)
+        {
+            CourseBUS courseBUS = new CourseBUS();
+            var course = await courseBUS.get_Course();
+            List<COURSE> collection = new List<COURSE>((IEnumerable<COURSE>)course);
         }
     }
 }

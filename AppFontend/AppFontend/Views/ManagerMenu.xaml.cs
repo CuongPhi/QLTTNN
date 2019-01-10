@@ -1,4 +1,6 @@
-﻿using AppFontend.Views.UC_Views;
+﻿using AppFontend.BUS;
+using AppFontend.DTO;
+using AppFontend.Views.UC_Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,8 +28,9 @@ namespace AppFontend.Views
             XemThongBao xemTB = new XemThongBao();
             Title.Text = "XEM THÔNG BÁO";
             mainView.Children.Add(xemTB);
+         
         }
-
+        
         private void ListViewMenu_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             mainView.Children.Clear();
@@ -64,6 +67,11 @@ namespace AppFontend.Views
                     mainView.Children.Add(xemDS);
                     break;
             }
+        }
+
+        private async void Grid_Loaded(object sender, RoutedEventArgs e)
+        {
+           
         }
     }
 }

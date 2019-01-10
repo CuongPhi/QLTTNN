@@ -7,45 +7,48 @@ using AppFontend.DTO;
 
 namespace AppFontend.DAL
 {
-    public sealed class CourseRepo : IRepos<COURSE>
+    public sealed class CourseRepo : IRepos<object>
     {
         private static readonly CourseRepo courseIns = new CourseRepo(); // only 1 instance will create
 
-        public CourseRepo() { }
+        private CourseRepo() { }
 
         public static CourseRepo CourseIns
         {
             get { return courseIns; }
         }
-        public void Delete(COURSE obj)
+
+        public void Delete(object obj)
         {
             throw new NotImplementedException();
         }
 
-        public List<COURSE> GetAll()
+        public async Task<object> GetAll()
         {
-            COURSE c = new COURSE() { id = 5, nameCourse = "KTPM", priceCourse = 1050, timeEnd = new DateTime(), timeStart = new DateTime() };
-            COURSE c1 = new COURSE() { id = 6, nameCourse = "MMHPM", priceCourse = 1050, timeEnd = new DateTime(), timeStart = new DateTime() };
+            HttpC<COURSE> z = new HttpC<COURSE>();
 
-            List<COURSE> l = new List<COURSE>();
-            l.Add(c);
-            l.Add(c1);
-            return l;
+            return await z.GetCourseAsync("http://localhost:3001/course");
 
         }
 
-        public COURSE GetByID(string id)
-        {
-            throw new NotImplementedException();
+  
 
-        }
-
-        public COURSE Insert(COURSE obj)
+        public object Insert(object obj)
         {
             throw new NotImplementedException();
         }
 
         public void Update(COURSE obj)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Update(object obj)
+        {
+            throw new NotImplementedException();
+        }
+
+        object IRepos<object>.GetByID(string id)
         {
             throw new NotImplementedException();
         }
