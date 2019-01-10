@@ -1,29 +1,28 @@
-﻿using System;
+﻿using AppFontend.DTO;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using AppFontend.DTO;
 
 namespace AppFontend.DAL
 {
-    public sealed class CourseRepo : IRepos<object>
+    public sealed class StudentRepo : IRepos<object>
     {
 
         /*
          *  only 1 instance will create 
          */
-        private static readonly CourseRepo courseIns = new CourseRepo();
-        private HttpC<COURSE> http = new HttpC<COURSE>();
+        private static readonly StudentRepo studentIns = new StudentRepo();
+        private HttpC<STUDENT> http = new HttpC<STUDENT>();
 
-        private CourseRepo() { }
+        private StudentRepo() { }
 
-        public static CourseRepo CourseIns
+        public static StudentRepo StudentIns
         {
-            get { return courseIns; }
+            get { return studentIns; }
         }
 
-        //
         public void Delete(object obj)
         {
             throw new NotImplementedException();
@@ -31,28 +30,20 @@ namespace AppFontend.DAL
 
         public async Task<object> GetAll()
         {
-            return await http.FetchDataAsync("http://localhost:3001/course");
-
+            return await http.FetchDataAsync("http://localhost:3001/student");
         }
 
-  
+        public object GetByID(string id)
+        {
+            throw new NotImplementedException();
+        }
 
         public object Insert(object obj)
         {
             throw new NotImplementedException();
         }
 
-        public void Update(COURSE obj)
-        {
-            throw new NotImplementedException();
-        }
-
         public void Update(object obj)
-        {
-            throw new NotImplementedException();
-        }
-
-        object IRepos<object>.GetByID(string id)
         {
             throw new NotImplementedException();
         }

@@ -8,8 +8,8 @@ namespace AppFontend.DTO
 {
     public class COURSE
     {
-        public string nameCourse { get; set; }
-        public int priceCourse { get; set; }
+        public string name { get; set; }
+        public int courseFee { get; set; }
         public DateTime timeStart { get; set; }
         public DateTime timeEnd { get; set; }
         public int id { get; set; }

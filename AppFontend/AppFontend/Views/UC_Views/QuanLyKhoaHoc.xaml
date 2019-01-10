@@ -14,35 +14,35 @@
                         <GridViewColumn Header="ID" Width="100">
                             <GridViewColumn.CellTemplate>
                                 <DataTemplate>
-                                    <TextBlock Text="{Binding STT}" Padding="25 5"></TextBlock>
+                                    <TextBlock Text="{Binding id}" Padding="25 5"></TextBlock>
                                 </DataTemplate>
                             </GridViewColumn.CellTemplate>
                         </GridViewColumn>
                         <GridViewColumn Header="Tên khóa học" Width="200">
                             <GridViewColumn.CellTemplate>
                                 <DataTemplate>
-                                    <TextBlock Text="{Binding TenMonHoc}" Padding="10 5"></TextBlock>
+                                    <TextBlock Text="{Binding name}" Padding="10 5"></TextBlock>
                                 </DataTemplate>
                             </GridViewColumn.CellTemplate>
                         </GridViewColumn>
                         <GridViewColumn Header="Ngày bắt đầu" Width="200">
                             <GridViewColumn.CellTemplate>
                                 <DataTemplate>
-                                    <TextBlock Text="{Binding NgayBatDau}" Padding="0 5"></TextBlock>
+                                    <TextBlock Text="{Binding timeStart}" Padding="0 5"></TextBlock>
                                 </DataTemplate>
                             </GridViewColumn.CellTemplate>
                         </GridViewColumn>
                         <GridViewColumn Header="Ngày kết thúc" Width="200">
                             <GridViewColumn.CellTemplate>
                                 <DataTemplate>
-                                    <TextBlock Text="{Binding NgayKetThuc}" Padding="15 5"></TextBlock>
+                                    <TextBlock Text="{Binding timeEnd}" Padding="15 5"></TextBlock>
                                 </DataTemplate>
                             </GridViewColumn.CellTemplate>
                         </GridViewColumn>
                         <GridViewColumn Header="Giá khóa học" Width="250">
                             <GridViewColumn.CellTemplate>
                                 <DataTemplate>
-                                    <TextBlock Text="{Binding NgayKetThuc}" Padding="15 5"></TextBlock>
+                                    <TextBlock Text="{Binding courseFee}" Padding="15 5"></TextBlock>
                                 </DataTemplate>
                             </GridViewColumn.CellTemplate>
                         </GridViewColumn>
