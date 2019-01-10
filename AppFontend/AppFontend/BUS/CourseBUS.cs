@@ -8,17 +8,16 @@ using AppFontend.DAL;
 
 namespace AppFontend.BUS
 {
-    public  class CourseBUS
+    public sealed  class CourseBUS
     {
-        static IRepos<COURSE> reps;
-        static CourseBUS()
+        private CourseRepo reps;
+        public CourseBUS()
         {
-            reps = new CourseRepo();
+            reps = CourseRepo.CourseIns;
         }
-        public static List<string> Courses_Name()
+        public async Task<object> get_Course()
         {
-            return reps.GetAll().Select(c => c.nameCourse).ToList(); // get all list course name from list course 
+            return await reps.GetAll(); // get all list course name from list course 
         }
-
     }
 }

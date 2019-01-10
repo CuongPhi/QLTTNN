@@ -8,7 +8,7 @@ namespace AppFontend.DAL
 {
     public interface IRepos<T>
     {
-        List<T> GetAll();
+        Task<T> GetAll();
         T Insert(T obj);
         void Delete(T obj);
         void Update(T obj);

@@ -12,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using AppFontend.BUS;
 
 namespace AppFontend.Views
 {
@@ -26,6 +27,7 @@ namespace AppFontend.Views
             XemThongBao xemTB = new XemThongBao();
             mainView.Children.Add(xemTB);
             Title.Text = "XEM THÔNG BÁO";
+         
         }
 
         private void ListViewMenu_SelectionChanged(object sender, SelectionChangedEventArgs e)

@@ -8,7 +8,7 @@
         mc:Ignorable="d"
         Title="Student Menu" Height="700" Width="1300" WindowStartupLocation="CenterScreen"
         ResizeMode="CanMinimize">
-    <Grid>
+    <Grid Loaded="Grid_Loaded">
         <StackPanel>
             <materialDesign:ColorZone Mode="PrimaryDark" Padding="16">
                 <DockPanel>
