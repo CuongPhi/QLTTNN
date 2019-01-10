@@ -32,6 +32,7 @@ namespace AppFontend.Views.UC_Views
             CourseBUS courseBUS = new CourseBUS();
             var course = await courseBUS.get_Course();
             List<COURSE> collection = new List<COURSE>((IEnumerable<COURSE>)course);
+            lvDanhSachDay.ItemsSource = collection;
         }
     }
 }

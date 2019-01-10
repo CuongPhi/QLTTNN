@@ -83,10 +83,14 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="BUS\CourseBUS.cs" />
+    <Compile Include="BUS\StudentBUS.cs" />
     <Compile Include="DAL\CourseRepo.cs" />
     <Compile Include="DAL\HttpClient.cs" />
     <Compile Include="DAL\IRepos.cs" />
+    <Compile Include="DAL\StudentRepo.cs" />
     <Compile Include="DTO\COURSE.cs" />
+    <Compile Include="DTO\STUDENT.cs" />
+    <Compile Include="Helper.cs" />
     <Compile Include="Views\ManagerMenu.xaml.cs">
       <DependentUpon>ManagerMenu.xaml</DependentUpon>
     </Compile>

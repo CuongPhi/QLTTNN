@@ -17,7 +17,7 @@ namespace AppFontend.BUS
         }
         public async Task<object> get_Course()
         {
-            return await reps.GetAll(); // get all list course name from list course 
+            return await reps.GetAll(); // get all list course 
         }
     }
 }

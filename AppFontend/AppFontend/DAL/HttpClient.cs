@@ -10,11 +10,19 @@ using AppFontend.DTO;
 
 namespace AppFontend.DAL
 {
+    /*
+     * @ Http class for fetch data from backend API
+     * @ using Generic Type <T>
+     */
     public class HttpC<T>
     {
-        private HttpClient client = new HttpClient();
-        public async Task<object> GetCourseAsync(string path)
+        private HttpClient client;
+        public async Task<object> FetchDataAsync(string path)
         {
+            if(!Helper.isValidURL(path))
+            {
+                return null; // return null if invalid url
+            }
             List<T> model = null;
             var client = new HttpClient();
             var task = client.GetAsync(path)
@@ -25,9 +33,12 @@ namespace AppFontend.DAL
                   jsonString.Wait();
                   model = JsonConvert.DeserializeObject<List<T>>(jsonString.Result);
               });
-            task.Wait();
+            task.Wait(); // waiting for data
             return model;
         }
-        public HttpC() {}
+        public HttpC()
+        {
+            client = new HttpClient();
+        }
     }
 }
